@@ -1,0 +1,11 @@
+.form-margin {
+  margin: 10px 0;
+}
+
+button ~ button {
+  margin: 0 10px;
+}
+
+.center-align {
+  text-align: center;
+}

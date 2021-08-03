@@ -10,6 +10,9 @@
     "src/polyfills.ts"
   ],
   "include": [
-    "src/**/*.d.ts"
+    "src/**/*.d.ts",
+    "src/app/lib/**/index.ts",
+    // "src/app/lib/**/*.module.ts",
+    // "src/app/lib/**/*.component.ts"
   ]
 }

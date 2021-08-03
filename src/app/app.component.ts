@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { IComponent, IComponentConfig } from './lib/config/component.config';
+import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { DataService } from './data/data.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'cms-components-demo';
+
+  constructor(private readonly dataSvc: DataService) {}
+
+  readonly data$: Observable<IComponent[]> = this.dataSvc.data$;
+
 }
